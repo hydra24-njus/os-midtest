@@ -50,7 +50,7 @@ int main() {
   #ifdef TEST
   fp=fopen("/home/hydra24/mid-test/test.txt","r");
   #endif
-  create(worker);create(worker);create(worker);create(worker);
+  for(int i=0;i<8;i++)create(worker);
   join();
   printf("%ld\n", sum);
 }
